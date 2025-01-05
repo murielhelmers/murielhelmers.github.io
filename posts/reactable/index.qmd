@@ -1,0 +1,16 @@
+---
+title: "Creating interactive tables with reactable - Albert Rapp"
+author: "Muriel Helmers"
+date: "2025-01-05"
+categories: [table, interactive]
+---
+
+I love Albert Rapps tutorial on creating a nice Quarto table using reactable. 
+
+It nicely shows the grouping possibility. Also, he shows how to add summaries per grouping which are interactive. This means that if you going to filter the table using the search field, the summary will only show the sum of entries that are still shown, i.e. match the search criteria.
+
+The end result is shown in the picture.
+
+The tutorial can be found on [Albert Rapps Blog](https://albert-rapp.de/posts/28_reactable_intro/28_reactable_intro.html){target="_blank"}.
+
+![](reactable_table.JPG)

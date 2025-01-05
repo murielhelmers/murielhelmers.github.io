@@ -1,0 +1,15 @@
+---
+title: "About me"
+image: MHelmers.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/murielhelmers/
+    - icon: github
+      text: Github
+      href: https://github.com/murielhelmers
+---
+
+I am a data management professional with over 15 years of experience at the intersection of clinical research, development cooperation and IT topics. Currently serving as the Deputy Head of Data Management at the Department of Clinical Research, University of Bern, Switzerland, I am passionate at bringing forward impactful clinical research projects in Switzerland as well as in low-resource settings.

@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: "docs"
+
+website:
+  title: "Muriel Helmers' Quarto Blog"
+  navbar:
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Learnings"
+        file: portfolio.qmd
+      - text: "CV"
+        file: cv.qmd
+    right:
+      - icon: github
+        href: https://github.com/murielhelmers
+      - icon: linkedin
+        href: https://www.linkedin.com/in/murielhelmers/
+format:
+  html:
+    theme: Lumen
+    css: styles.css
+
+editor: visual
+

@@ -1,0 +1,16 @@
+{
+  "hash": "93942886c951e04f62efa6ae01526c88",
+  "result": {
+    "markdown": "---\ntitle: \"Creating gradients beneath graph curves using ggpattern - Albert Rapp\"\nauthor: \"Muriel Helmers\"\ndate: \"2025-01-02\"\ncategories: [Quarto, graph, pattern]\nimage: graphs.jpg\n---\n\n\nHere a tutorial by Albert Rapp, showing how to make your graphs looking nice with ggpattern. I specially liked the way he used ggpattern to add gradients beneath the graph curve.\n\nThe shows how it is meant, the tutorial can be found on [Albert Rapps Blog](https://albert-rapp.de/posts/ggplot2-tips/20_ggplot_extensions/ggplot_extensions){target=\"_blank\"}.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nlibrary(lubridate)\nlibrary(dplyr)\nlibrary(ggpattern) \nlibrary(magick) # gradient pattern requires this\n\ngt::sp500 |> \n  filter(date >= make_date(2000)) |> \n  ggplot(aes(x = date, y = open)) + \n  ggpattern::geom_area_pattern(\n    col = 'dodgerblue4',\n    pattern = \"gradient\", \n    pattern_fill2 = 'dodgerblue3',\n    pattern_fill = 'white'\n  ) +\n  labs(y = \"opening price in USD\") +\n  theme_minimal()\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

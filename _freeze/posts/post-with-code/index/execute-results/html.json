@@ -1,0 +1,14 @@
+{
+  "hash": "1793299b70ba8eb6949dd5cd05b76a0f",
+  "result": {
+    "markdown": "---\ntitle: \"Analysis of DHS Data\"\nauthor: \"Kene David Nwosu\"\ndate: \"2025-01-05\"\ncategories: [code, analysis, r]\nimage: \"image.jpg\"\n---\n\n\nThis project was made by Kene using DHS data. You can find the project [here](https:demolandscapes.info/){target=\"_blank\"}\n\nThis is a post with executable code.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

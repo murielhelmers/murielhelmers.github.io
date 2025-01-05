@@ -1,0 +1,14 @@
+---
+title: "Welcome To My Blog"
+author: "Muriel Helmers"
+date: "2025-01-01"
+categories: [news]
+---
+
+I created this webpage including the Quarto blog during my training [Websites and Dashboards with R](https://thegraphcourses.org/courses/websites-and-dashboards-with-r/), provided by the [GRAPH network](https://thegraphcourses.org/). I highly recommend the course, every minute in it is worth your time!
+
+I'll post in this blog my favorite Quarto tutorials and how-to guides. Most of the content will not be written by me, it is rather a summary of useful input by other very knowledgeable and dedicated people.
+
+Welcome and many thanks to all the people publishing such helpful tutorials!
+
+![](thumbnail.jpg)

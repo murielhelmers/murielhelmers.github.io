@@ -1,0 +1,35 @@
+---
+title: "Creating gradients beneath graph curves using ggpattern - Albert Rapp"
+author: "Muriel Helmers"
+date: "2025-01-02"
+categories: [graph, pattern]
+image: graphs.jpg
+---
+
+Here a tutorial by Albert Rapp, showing how to make your graphs looking nice with ggpattern. I specially liked the way he used ggpattern to add gradients beneath the graph curve.
+
+The shows how it is meant, the tutorial can be found on [Albert Rapps Blog](https://albert-rapp.de/posts/ggplot2-tips/20_ggplot_extensions/ggplot_extensions){target="_blank"}.
+
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
+
+library(ggplot2)
+library(lubridate)
+library(dplyr)
+library(ggpattern) 
+library(magick) # gradient pattern requires this
+
+gt::sp500 |> 
+  filter(date >= make_date(2000)) |> 
+  ggplot(aes(x = date, y = open)) + 
+  ggpattern::geom_area_pattern(
+    col = 'dodgerblue4',
+    pattern = "gradient", 
+    pattern_fill2 = 'dodgerblue3',
+    pattern_fill = 'white'
+  ) +
+  labs(y = "opening price in USD") +
+  theme_minimal()
+```
